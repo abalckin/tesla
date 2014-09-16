@@ -1,3 +1,8 @@
+"""
+Copyright (c) 2014 Verzunov S.N.
+Institute of Informatics and Information tehnogology NAS of the Kyrgyz Republic
+All rights reserved.
+"""
 #! /usr/bin/env python3
 #
 import sys

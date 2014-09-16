@@ -1,3 +1,9 @@
+"""
+Copyright (c) 2014 Verzunov S.N.
+Institute of Informatics and Information tehnogology NAS of the Kyrgyz Republic
+All rights reserved.
+Code released under the GNU GENERAL PUBLIC LICENSE Version 2, June 1991
+"""
 #http://spidr.ngdc.noaa.gov/spidr/servlet/GetData2?format=xml&datefrom=1980-01-01T00:00:00UTC&dateto=2001-01-01T00:00:00UTC&dataset=geom_f@Geom.hr&location=BOU
 import csv
 from PyQt4 import QtCore
