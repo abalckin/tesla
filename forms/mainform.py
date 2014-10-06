@@ -13,6 +13,7 @@ from forms.progressgroup import ProgressGroup
 from forms.truescrollbar import TrueScrollBar
 from forms.downloadform import DownloadForm
 from forms.plotdialog import ScalegramPlotDialog, PeriodogramPlotDialog
+from forms.plotdialog import SceletonPlotDialog
 from forms.mplqt4 import MyMplCanvas
 from processing.wavelet import WaweletAnalysis as WA
 from wavelets import cwt
@@ -48,6 +49,7 @@ class MainForm(QtGui.QMainWindow):
         self.actionSave_scalogram_as.triggered.connect(self.saveScalogramAs)
         self.actionPlot_periodogram.triggered.connect(self.plotPeriodogram)
         self.actionPlot_scalegram.triggered.connect(self.plotScalegram)
+        self.actionPlot_sceleton.triggered.connect(self.plotSceleton)
         self.offsetHorizontalScrollBar.sliderMoved.connect(self.offsetMoved)
         self.sizeVerticalScrollBar.invSliderMoved.connect(self.sizeMoved)
         self.scaleHorizontalScrollBar.valueChanged.connect(self.scaleCanged)
@@ -172,6 +174,10 @@ class MainForm(QtGui.QMainWindow):
     def plotScalegram(self):
         self.scalegramForm = ScalegramPlotDialog(self.wa, parent=self)
         self.scalegramForm.show()
+
+    def plotSceleton(self):
+        self.sceletonForm = SceletonPlotDialog(self.wa, parent=self)
+        self.sceletonForm.show()
 
     def showDataHeader(self):
         self.dataHeaderForm = DataHeaderForm(self.csv.header)

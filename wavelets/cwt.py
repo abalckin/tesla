@@ -155,6 +155,12 @@ class Cwt:
         returns square of wavelet coefficient array
         """
         return (self.cwt* NP.conjugate(self.cwt)).real
+    def getangle(self):
+        """
+        returns angle of wavelet coefficient array
+        """
+        return NP.angle(self.cwt)
+
     def getscales(self):
         """
         returns array containing scales used in transform

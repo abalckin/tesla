@@ -477,7 +477,7 @@
      <x>0</x>
      <y>0</y>
      <width>620</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -498,8 +498,11 @@
      <string>Data</string>
     </property>
     <addaction name="actionDataHeader"/>
+    <addaction name="separator"/>
     <addaction name="actionPlot_periodogram"/>
     <addaction name="actionPlot_scalegram"/>
+    <addaction name="actionPlot_sceleton"/>
+    <addaction name="separator"/>
     <addaction name="actionDetrend"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
@@ -605,6 +608,16 @@
   <action name="actionDetrend">
    <property name="text">
     <string>Detrend</string>
+   </property>
+  </action>
+  <action name="actionPlot_phasegram">
+   <property name="text">
+    <string>Plot phasegram</string>
+   </property>
+  </action>
+  <action name="actionPlot_sceleton">
+   <property name="text">
+    <string>Plot sceleton</string>
    </property>
   </action>
  </widget>

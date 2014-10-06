@@ -44,3 +44,15 @@ class ScalegramPlotDialog(PlotDialog):
     def __init__(self, wa, parent=None, title='Scalegram'):
         PlotDialog.__call__(self, wa, parent=parent, title=title)
         wa.plotScalegram(self.canvas.axes)
+
+
+class SceletonPlotDialog(PlotDialog):
+    def __init__(self, wa, parent=None, title='Sceleton'):
+        PlotDialog.__call__(self, wa, parent=parent, title=title)
+        wa.plotSceleton(self.canvas.axes)
+
+    def canvasMotion(self, event):
+        if event.xdata is not None and event.ydata is not None:
+            self.coordLabel.setText('x=%s, y=%s' %
+                                    (pylab.num2date(event.xdata).strftime(
+                                        '%d.%m.%y %H:%M'), event.ydata))

@@ -1,10 +1,10 @@
+#! /usr/bin/env python3
 """
 Copyright (c) 2014 Verzunov S.N.
 Institute of Informatics and Information tehnogology NAS of the Kyrgyz Republic
-All rights reserved.
+All rights reservedии.
 """
-#! /usr/bin/env python3
-#
+#;
 import sys
 from PyQt4 import QtGui  # подключает основные модули PyQt
 from forms.mainform import MainForm   # подключает модуль описания формы

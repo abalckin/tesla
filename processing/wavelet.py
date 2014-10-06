@@ -9,6 +9,8 @@ import pylab as plb
 import datetime as dt
 import wavelets.cwt as wave
 import time as profiler
+from scipy.ndimage.filters import maximum_filter, minimum_filter
+from scipy.ndimage.morphology import generate_binary_structure, binary_erosion
 from PyQt4 import QtCore
 
 
@@ -54,30 +56,29 @@ class WaweletAnalysis(QtCore.QObject):
         #axes.set_ylabel(ylabel)
     def _plotScalogram(self, cw):
         self._cw=cw
-        start=profiler.time()
+        #start=profiler.time()
         scales=cw.getscales()     
         cwt=cw.getdata()
         pwr=cw.getpower()
-        scalespec=np.sum(pwr,axis=1)/scales # calculate scale spectrum
+       # pwr=cw.getangle()*1e20
+        #scalespec=np.sum(pwr,axis=1)/scales # calculate scale spectrum
+        #scalespec=np.sum(np.anglpwr,axis=1)/scales # calculate scale spectrum
         # scales
         y=cw.fourierwl*scales
         #x=np.arange(Nlo*1.0,Nhi*1.0,1.0)
         #mpl.xlabel('Date')
         #mpl.ylabel('Period, %s' % p_label)
-        plotcwt=np.clip(pwr,self._min_h,self._max_h)
-        print(y)
-        print("Matr")
-        print(plotcwt.shape)
-        im=self._axes.imshow(plotcwt,cmap=plb.cm.hot_r,
-        extent=[plb.date2num(self._x[0]),plb.date2num(self._x[-1]),
-        y[-1],y[0]],aspect='auto', interpolation=None)
+        plotcwt = np.clip(pwr, self._min_h, self._max_h)
+        self._axes.imshow(plotcwt,cmap=plb.cm.hot_r,
+                          extent=[plb.date2num(self._x[0]),plb.date2num(self._x[-1]),
+                            y[-1],y[0]],aspect='auto', interpolation=None)
         self._axes.xaxis_date()
         #yearsFmt = mpl.DateFormatter('%m.%y')
         #axes.xaxis.set_major_formatter(yearsFmt)
         #mpl.gcf().autofmt_xdate()
         if self._scaling=="log": self._axes.set_yscale('log')
         self._axes.set_ylim(y[0],y[-1])
-        print('Plot - %.03f s' % (profiler.time()-start))
+        #print('Plot - %.03f s' % (profiler.time()-start))
         self.plotted.emit()
 
     def plotScalogram(self, axes,size,offset, max_h=1000., min_h=0.,p_label='', s_label='',wavelet=wave.Morlet, scaling='log',
@@ -135,6 +136,27 @@ class WaweletAnalysis(QtCore.QObject):
         axes.set_xlim(1e-1, np.max(scalespec))
         axes.set_ylim(y[0], y[-1])
 
+    def plotSceleton(self, axes, xlabel='Power',
+                      ylabel='Period', scaling='log', min_h=0., max_h=1000.):
+        cw = self._cw
+
+        scales = cw.getscales()
+        pwr = self.getSceleton(cw.getpower())
+        y = cw.fourierwl*scales
+        #plotcwt1 = np.clip(pwr[0], self._min_h, self._max_h)
+        #plotcwt2 = np.clip(pwr[1], self._min_h, self._max_h)
+        axes.imshow(pwr[0], cmap=plb.cm.hot_r,
+                          extent=[plb.date2num(self._x[0]),plb.date2num(self._x[-1]),
+                            y[-1], y[0]], aspect='auto', interpolation=None)
+        axes.xaxis_date()
+        axes.imshow(pwr[1], cmap=plb.cm.hot_r,
+                          extent=[plb.date2num(self._x[0]),plb.date2num(self._x[-1]),
+                            y[-1], y[0]], aspect='auto', interpolation=None)
+        axes.xaxis_date()
+        if scaling == "log":
+            axes.set_yscale('log')
+        axes.set_ylim(y[0], y[-1])
+        
     def cancelScalogram(self):
         self._wt.terminate()
         
@@ -152,3 +174,11 @@ class WaweletAnalysis(QtCore.QObject):
 
     def detrend(self):
         self._values = plb.detrend(self._values, key='linear')
+
+    def getSceleton(self, im):
+        imp1 = np.pad(im, ((1, 1), (0, 0)), 'minimum')
+        imp0 = np.pad(im, ((0, 0), (1, 1)), 'minimum')
+        row = (np.diff(np.sign(np.diff(imp0, axis=1)), axis=1) < 0)
+        col = (np.diff(np.sign(np.diff(imp1, axis=0)), axis=0) < 0)
+        return (row*im, col*im)
+    

@@ -11,8 +11,9 @@ import numpy as np
 import datetime as dt
 import os
 import urllib.request
-
-
+import matplotlib.dates as dates
+from scipy.signal import cspline1d, cspline1d_eval
+import pdb
 class CSVDownload(QtCore.QThread):
     notifyProgress = QtCore.pyqtSignal(int)
     loaded = QtCore.pyqtSignal()
@@ -33,11 +34,11 @@ class CSVDownload(QtCore.QThread):
 class CSVImpot(QtCore.QThread):
     notifyProgress = QtCore.pyqtSignal(int)
     loaded = QtCore.pyqtSignal()
-
     def __init__(self, fileName):
         QtCore.QThread.__init__(self)
         self.fileName = fileName
         self.header=[]
+        self.interpolate = True
 
     def run(self):
         _, fileExtension = os.path.splitext(self.fileName)
@@ -53,16 +54,6 @@ class CSVImpot(QtCore.QThread):
                         date.append(row[0])
                         value.append(row[1])
             self.notifyProgress.emit(20)
-            signal = np.array((date, value), dtype=np.dtype('a25'))
-            signal = signal[:, np.logical_not(
-                np.isnan(signal[1, :].astype(np.float)))]
-            self.notifyProgress.emit(40)
-            self.value = signal[1, :].astype(np.float)
-            # self.value=np.nan_to_num(self.value)
-            self.notifyProgress.emit(60)
-            self.time = signal[0, :].astype(np.datetime64).astype(dt.datetime)
-            self.notifyProgress.emit(80)
-            self.loaded.emit()
         elif fileExtension == '.ske':
             print('Kp estimation')
             with open(self.fileName, 'rt') as csvdata:
@@ -82,16 +73,33 @@ class CSVImpot(QtCore.QThread):
                             value.append(float(row[-1])-float(row[-14]))  #4h
                             # value.append(float(row[-1])-float(row[19]))  # 1h
             self.notifyProgress.emit(20)
-            signal = np.array((date, value), dtype=np.dtype('a25'))
-            signal = signal[:, np.logical_not(
-                np.isnan(signal[1, :].astype(np.float)))]
-            self.notifyProgress.emit(40)
+        signal_src = np.array((date, value), dtype=np.dtype('a25'))
+        signal = signal_src[:, np.logical_not(
+            np.isnan(signal_src[1, :].astype(np.float)))]
+        # self.value=np.nan_to_num(self.value)
+        self.notifyProgress.emit(60)
+        if self.interpolate:
+            self.time = signal_src[0,:].astype(np.datetime64).astype(dt.datetime)
+            dx = dates.date2num(self.time[1])-dates.date2num(self.time[0])
+            cj = cspline1d(signal[1, :].astype(float))
+            self.value = cspline1d_eval(cj, dates.date2num(self.time),
+                                        dx=dx,
+                                        x0=dates.date2num(self.time[0]))
+            #pdb.set_trace()
+        else:
+            self.time = dates.signal[0, :].astype(np.datetime64).astype(dt.datetime)
             self.value = signal[1, :].astype(np.float)
-            # self.value=np.nan_to_num(self.value)
-            self.notifyProgress.emit(60)
-            self.time = signal[0, :].astype(np.datetime64).astype(dt.datetime)
-            self.notifyProgress.emit(80)
-            self.loaded.emit()
+        self.notifyProgress.emit(80)
+        self.loaded.emit()
 
     def __del__(self):
         self.wait()
+
+
+
+
+
+
+
+
+
