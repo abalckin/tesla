@@ -1,0 +1,2434 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.1.23)  5 MAR 2015 00:07
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**listing.tex
+(./listing.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 9 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count87
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count88
+\lst@currlwidth=\dimen103
+\lst@column=\count89
+\lst@pos=\count90
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count91
+\lst@lineno=\count92
+\lst@maxwidth=\dimen106
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count93
+\lst@skipnumbers=\count94
+\lst@framebox=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+ (./listing.aux)
+\openout1 = `listing.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+\c@lstlisting=\count95
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+) (./main.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 4--5
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no ∏ in font cmr10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no é in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no á in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≤ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+
+Overfull \hbox (147.005pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no é in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no á in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no è in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ñ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+
+Overfull \hbox (261.00616pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∑ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ë in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≤ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no π in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ± in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≥ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+
+Overfull \hbox (285.00641pt too wide) in paragraph at lines 17--18
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∑ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ë in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ± in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ñ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ë in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ± in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∂ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ± in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ñ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∂ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+
+Overfull \hbox (411.00769pt too wide) in paragraph at lines 21--22
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∑ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∂ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 22--24
+[][][][][][][][][][][][][][][] 
+ []
+
+) (./processing/__init__.py) (./processing/wavelet.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 12--13
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][][][][][][] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 22--23
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (135.00488pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 48.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 48.
+
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 48--50
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 65--66
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+
+Overfull \hbox (165.00519pt too wide) in paragraph at lines 73--74
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 74--75
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 79--80
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 81--82
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (411.00769pt too wide) in paragraph at lines 84--85
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 94--95
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 95--96
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 98--99
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 99--100
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[3]
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 124--125
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 127--128
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 140--141
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 146--147
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 147--148
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.00519pt too wide) in paragraph at lines 149--150
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 150--151
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.00519pt too wide) in paragraph at lines 153--154
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 154--155
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[4]
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 176--178
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 181--182
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 182--183
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./processing/.ropeproject/config.py
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 5--7
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 12--13
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[5]
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 17--19
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 19--20
+[][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 21--22
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 31--32
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 42--43
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 48--49
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[6]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 61--62
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 66--67
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 70--71
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 73--74
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 74--75
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 78--79
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 84--85
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./interfaces/__init__.py) (./interfaces/spidr.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (609.0097pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+[7]
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[8]
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 70--71
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 73--74
+[][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 74--75
+[][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 76--77
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (141.00494pt too wide) in paragraph at lines 82--83
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 83--84
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 85--86
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 87--88
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (159.00513pt too wide) in paragraph at lines 90--91
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./wavelets/__init__.py) (./wavelets/cwt.py
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 4--6
+[][][][][][][][][][][][][][][][][] 
+ []
+
+[9]
+Overfull \hbox (507.00867pt too wide) in paragraph at lines 12--14
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (435.00793pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][] 
+ []
+
+
+Overfull \hbox (903.0127pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (855.0122pt too wide) in paragraph at lines 16--18
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4185.04608pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[10]
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 54--55
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 56--57
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 66--67
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 68--69
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 77--78
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 86--88
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (345.00702pt too wide) in paragraph at lines 88--89
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 92--93
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 94--95
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[11]
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 97--98
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 98--99
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 106--107
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (201.00555pt too wide) in paragraph at lines 107--108
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 110--111
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 111--112
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 115--116
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 118--119
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 122--123
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 124--125
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 126--127
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 128--129
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (189.00543pt too wide) in paragraph at lines 137--138
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 141--142
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[12]
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 143--144
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 182--183
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[13]
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 188--189
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 197--198
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (645.01007pt too wide) in paragraph at lines 203--204
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 214--215
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 226--227
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[14]
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 243--244
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 259--261
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 269--271
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 279--280
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[15]
+Overfull \hbox (165.00519pt too wide) in paragraph at lines 295--296
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[16]
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 363--364
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[17]
+Overfull \hbox (177.00531pt too wide) in paragraph at lines 375--376
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 379--380
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 391--392
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 392--394
+[][][][][][][][][][][][][][][][][] 
+ []
+
+) (./forms/mplqt4.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[18]
+Overfull \hbox (135.00488pt too wide) in paragraph at lines 11--12
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 22--23
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 32--33
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 33--34
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 36--37
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (153.00507pt too wide) in paragraph at lines 37--38
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 39--40
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 40--41
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 41--43
+[][][][][][][][][][][][][][] 
+ []
+
+) (./forms/plotdialog.ui [19] [20]) (./forms/dataheaderform.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[21]
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no é in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no á in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≤ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+
+Overfull \hbox (225.0058pt too wide) in paragraph at lines 8--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≤ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no π in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ñ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+) (./forms/downloadform.ui
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][] 
+ []
+
+[22]
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 72--73
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[23] [24]
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 152--153
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[25]
+Overfull \hbox (387.00745pt too wide) in paragraph at lines 169--170
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+[26]) (./forms/truescrollbar.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [27] (./forms/mainform.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no é in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no á in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≤ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+
+Overfull \hbox (225.0058pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 42--43
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 43--44
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][][] 
+ []
+
+[28]
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 46--47
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 48--49
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 49--50
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 54--55
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 55--56
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 56--57
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 60--61
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 61--62
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 63--64
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 65--66
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 72--74
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 81--82
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 84--85
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 87--88
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 88--89
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 89--90
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 90--91
+[][][][][][][][][][][][][] 
+ []
+
+[29]
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 91--92
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 92--93
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 93--94
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 94--95
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 95--96
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 96--97
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 106--107
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 107--108
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 108--109
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 112--113
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 115--116
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 117--118
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 122--123
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[30]
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 140--141
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 141--142
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 152--154
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 160--161
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 171--172
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 175--176
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 179--180
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[31]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 183--184
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 196--197
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 205--206
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 208--209
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 210--211
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 213--214
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 215--216
+[][][][][][][][][][][] 
+ []
+
+[32]
+Overfull \hbox (147.005pt too wide) in paragraph at lines 274--275
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[33]
+Overfull \hbox (171.00525pt too wide) in paragraph at lines 275--276
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 276--278
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (177.00531pt too wide) in paragraph at lines 279--280
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (189.00543pt too wide) in paragraph at lines 280--281
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 281--283
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 301--302
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./forms/__init__.py) (./forms/mainform.ui [34] [35]
+Overfull \hbox (147.005pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 88--89
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[36]
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 113--114
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 132--133
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[37]
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 155--156
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 157--158
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[38]
+Overfull \hbox (165.00519pt too wide) in paragraph at lines 211--212
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[39]
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 237--238
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 262--263
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[40]
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 298--299
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[41]
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 335--336
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 366--367
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[42]
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 378--379
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 408--409
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[43] [44] [45] [46] [47]) (./forms/downloadform.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no é in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no á in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≤ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+
+Overfull \hbox (225.0058pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≤ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no π in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ñ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+[48]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 31--32
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 46--47
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 48--49
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 56--57
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (159.00513pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[49]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 79--80
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 80--81
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 81--82
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 82--83
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 83--84
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 89--90
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 90--92
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (171.00525pt too wide) in paragraph at lines 101--102
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 104--105
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[50]
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 117--118
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 118--119
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 120--121
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 122--123
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 123--124
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./forms/aboutform.ui [51]
+Overfull \hbox (891.01257pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][] 
+ []
+
+[52] [53]) (./forms/dataheaderform.ui [54] [55]) (./forms/aboutform.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no é in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no á in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≤ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no µ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ¥ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+
+Overfull \hbox (225.0058pt too wide) in paragraph at lines 8--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∏ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ø in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≥ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ª in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∞ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ≤ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no π in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ñ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no º in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no ã in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no Ω in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Å in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no É in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no ∫ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ç in font cmti10!
+Missing character: There is no – in font cmti10!
+Missing character: There is no æ in font cmti10!
+Missing character: There is no — in font cmti10!
+Missing character: There is no Ä in font cmti10!
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./forms/progressgroup.ui [56] [57]) (./forms/plotdialog.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 17--18
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][] 
+ []
+
+[58]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (111.00464pt too wide) in paragraph at lines 21--22
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 22--23
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 27--29
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 31--32
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 34--37
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 39--40
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 55--56
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][] 
+ []
+
+)
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 58--3
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+(./forms/progressgroup.py
+Overfull \hbox (129.00482pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[59]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 17--18
+[][][][][][][][][][][][][][][] 
+ []
+
+) [60] (./listing.aux) ) 
+Here is how much of TeX's memory you used:
+ 2388 strings out of 494508
+ 32910 string characters out of 6173565
+ 167747 words of memory out of 5000000
+ 5603 multiletter control sequences out of 15000+600000
+ 4294 words of font info for 16 fonts, out of 8000000 for 9000
+ 430 hyphenation exceptions out of 8191
+ 32i,5n,43p,2479b,1524s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on listing.pdf (60 pages, 267932 bytes).
+PDF statistics:
+ 218 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
