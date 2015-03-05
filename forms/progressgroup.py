@@ -1,8 +1,9 @@
 """
 Copyright (c) 2014 Verzunov S.N.
-Institute of Informatics and Information tehnogology NAS of the Kyrgyz Republic
+Institute of Automation and Information tehnogology
+NAS of the Kyrgyz Republic
 All rights reserved.
-Code released under the GNU GENERAL PUBLIC LICENSE Version 2, June 1991
+Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
 """
 from PyQt4 import QtCore, QtGui, uic
 

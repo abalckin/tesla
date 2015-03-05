@@ -9,13 +9,27 @@ Code released under the BSD 3-clause licence.
 Copyright (c) 2012, R W Fearick, University of Cape Town
 All rights reserved.
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+    * Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     ocumentation and/or other materials provided with the distribution.
+    * Neither the name of the University of Cape Town nor the names of its
+     contributors may be used to endorse or promote products derived from this
+      software without specific prior written permission.
 
-    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-    * Neither the name of the University of Cape Town nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ---------------------------------------------------------
 
 Wavelet classes:
@@ -83,9 +97,10 @@ class Cwt:
 
     def _log2(self, x):
         # utility function to return (integer) log2
-        return int( NP.log(float(x))/ NP.log(2.0)+0.0001 )
+        return int(NP.log(float(x)) / NP.log(2.0) + 0.0001 )
 
-    def __init__(self, data,finished,notifyProgress, largestscale=1, notes=0, order=2, scaling='linear',omega0=5.):
+    def __init__(self, data, finished, notifyProgress, largestscale=1, notes=0,
+                 order=2, scaling='linear', omega0=5.):
         """
         Continuous wavelet transform of data
 
@@ -104,7 +119,8 @@ class Cwt:
         self.scale=largestscale
         self._setscales(ndata,largestscale,notes,scaling)
         self.cwt= NP.zeros((self.nscale,ndata), NP.complex64)
-        omega= NP.array(list(range(0,ndata//2))+list(range(-ndata//2,0)))*(2.0*NP.pi/ndata)
+        omega = NP.array(list(range(0, ndata//2)) +
+                         list(range(-ndata//2,0)))*(2.0*NP.pi/ndata)
         datahat=NP.fft.fft(data)
         self.fftdata=datahat
         #self.psihat0=self.wf(omega*self.scales[3*self.nscale/4])
@@ -134,7 +150,8 @@ class Cwt:
             self.nscale=notes*noctave
             self.scales=NP.zeros(self.nscale,float)
             for j in range(self.nscale):
-                self.scales[j] = ndata/(self.scale*(2.0**(float(self.nscale-1-j)/notes)))
+                self.scales[j] = ndata/(self.scale *
+                                        (2.0**(float(self.nscale-1-j)/notes)))
         elif scaling=="linear":
             nmax=ndata/largestscale/2
             step=(nmax-2)/2**notes
@@ -200,7 +217,10 @@ class MorletReal(Cwt):
         for i in range(len(s_omega)):
             if s_omega[i] < 0.0: H[i]=0.0
         # !!!! note : was s_omega/8 before 17/6/03
-        xhat=0.75112554*( NP.exp(-(s_omega-self.omega0)**2/2.0)+ NP.exp(-(s_omega+self.omega0)**2/2.0)- NP.exp(-(self.omega0)**2/2.0)+ NP.exp(-(self.omega0)**2/2.0))
+        xhat = 0.75112554*(NP.exp(-(s_omega-self.omega0)**2/2.0) +
+                         NP.exp(-(s_omega+self.omega0)**2/2.0) -
+                         NP.exp(-(self.omega0)**2/2.0) +
+                         NP.exp(-(self.omega0)**2/2.0))
         return xhat
     
 ## class Paul4(Cwt):
@@ -291,8 +311,9 @@ class DOG(Cwt):
             print ("Requires scipy gamma function")
             raise ImportError
         Cwt.fourierwl=2* NP.pi/ NP.sqrt(self.order+0.5)
-        m=self.order
-        dog=1.0J**m*s_omega**m* NP.exp(-s_omega**2/2)/ NP.sqrt(gamma(self.order+0.5))
+        m = self.order
+        dog = 1.0J**m*s_omega**m* NP.exp(-s_omega**2/2)/NP.sqrt(
+            gamma(self.order+0.5))
         return dog
 
 class Haar(Cwt):
@@ -372,7 +393,8 @@ if __name__=="__main__":
     mpl.xlabel('Time [s]')
     plotcwt=np.clip(np.fabs(cwt.real), 0., 1000.)
     if plotpower2d: plotcwt=pwr
-    im=mpl.imshow(plotcwt,cmap=mpl.cm.jet,extent=[x[0],x[-1],y[-1],y[0]],aspect='auto')
+    im=mpl.imshow(plotcwt,cmap=mpl.cm.jet,extent=[x[0],x[-1],y[-1],y[0]],
+                  aspect='auto')
     #colorbar()
     if scaling=="log": ax.set_yscale('log')
     mpl.ylim(y[0],y[-1])

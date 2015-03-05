@@ -1,21 +1,18 @@
 """
 Copyright (c) 2014 Verzunov S.N.
-Institute of Informatics and Information tehnogology NAS of the Kyrgyz Republic
+Institute of Automation and Information tehnogology
+NAS of the Kyrgyz Republic
 All rights reserved.
-Code released under the GNU GENERAL PUBLIC LICENSE Version 2, June 1991
+Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
 """
-#! /usr/bin/env python3
-from PyQt4 import QtCore, QtGui, uic  # подключает основные модули PyQt
+from PyQt4 import QtCore, QtGui, uic
 import numpy as np
 import datetime as dt
 import os
 from interfaces.spidr import CSVDownload
 from forms.progressgroup import ProgressGroup
-# прототип главной формы
-
 
 class DownloadForm(QtGui.QDialog):
-    # конструктор
     def __init__(self, parent=None):
         QtGui.QDialog.__init__(self, parent)
         uic.loadUi("forms/downloadform.ui", self)

@@ -1,4 +1,11 @@
 #! /usr/bin/python3
+"""
+Copyright (c) 2014 Verzunov S.N.
+Institute of Automation and Information tehnogology
+NAS of the Kyrgyz Republic
+All rights reserved.
+Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
+"""
 import os
 from subprocess import call
 def get_filepaths(directory):
@@ -12,6 +19,8 @@ def get_filepaths(directory):
 
     # Walk the tree.
     for root, directories, files in os.walk(directory):
+        files = [f for f in files if not f[0] == '.']
+        directories[:] = [d for d in directories if not d[0] == '.']
         for filename in files:
             # Join the two strings in order to form the full filepath.
             filepath = os.path.join(root, filename)
@@ -22,30 +31,33 @@ def get_filepaths(directory):
 
     return file_paths  # Self-explanatory.
 
-# Run the above function and store its results in a variable.   
 files = get_filepaths(".")
 listing = open("listing.tex", "w")
 listing.write(r"""\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{cmap}""")
+listing.write(r"""
 \usepackage{listings}             % Include the listings-package
-\begin{document}""")
-for f in files[1:]:
-    #listing.write('\n$')
-    #listing.write(f)
-    #listing.write('\n')
-    #listing.write(f)
-##     listing.write(r"""
-## \lstset{language=Python}          % Set your language (you can change the language for each code-block optionally)
-## """)
-##     listing.write(r"""
-## \begin{lstlisting}[frame=single]  % Start your code-block
-## """)
-    
-    #text = open(f, "r").read()
-    listing.write("\lstinputlisting[language=Python, title=\lstname]{"+f+"}")
-    #import pdb; pdb.set_trace();
-    #listing.write(text)
-##     listing.write(r"""
-## \end{lstlisting}""")
+""")
+listing.write(r"""\usepackage[left=2cm, top=2cm, right=0.5cm, bottom=20mm,""")
+listing.write(r"""nohead, nofoot]{geometry}
+""")
+listing.write(r"""
+\begin{document}
+""")
+
+for f in files:
+    fileName, fileExtension = os.path.splitext(f)
+    if fileExtension == '.py':
+        listing.write(
+            r"\lstinputlisting[language=Python, breaklines=true,")
+        listing.write(r"title=\lstname]{"+f+"}")
+    else:
+        listing.write(
+            r"\lstinputlisting[language=Python, breaklines=true,")
+        listing.write(r"title=\lstname]{"+f+"}")
+
 listing.write(r"""
 
 \end{document}""")
