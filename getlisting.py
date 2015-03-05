@@ -19,7 +19,7 @@ def get_filepaths(directory):
 
     # Walk the tree.
     for root, directories, files in os.walk(directory):
-        files = [f for f in files if not f[0] == '.']
+        files = [f for f in files if not f[0] == '.' and not f == 'getlisting.py']
         directories[:] = [d for d in directories if not d[0] == '.']
         for filename in files:
             # Join the two strings in order to form the full filepath.
@@ -32,34 +32,103 @@ def get_filepaths(directory):
     return file_paths  # Self-explanatory.
 
 files = get_filepaths(".")
-listing = open("listing.tex", "w")
+listing = open("listing.tex","w", encoding='cp1251')
 listing.write(r"""\documentclass{article}
-\usepackage[utf8]{inputenc}
+
 \usepackage[russian]{babel}
 \usepackage{cmap}""")
 listing.write(r"""
 \usepackage{listings}             % Include the listings-package
+\usepackage{graphicx}
+\usepackage{url}
 """)
 listing.write(r"""\usepackage[left=2cm, top=2cm, right=0.5cm, bottom=20mm,""")
 listing.write(r"""nohead, nofoot]{geometry}
 """)
 listing.write(r"""
+\renewcommand*\contentsname{Оглавление}
 \begin{document}
 """)
+listing.write(r"""
+\begin{titlepage}
 
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Национальная Академия Наук Кыргызской Республики}\\[1.5cm] % Name of your university/college
+\textsc{\Large Институт Автоматики и Информационных Технологий}\\[0.5cm] % Major heading such as course name
+\textsc{\large Лаборатория ИИС}\\[3cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Листинг исходного текста}\\[0.4cm] % Title of your document
+{ \huge \bfseries программных средств для вейвлет-анализа временных рядов}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+\Large \emph{Автор:}\\
+м.н.с. С.Н. \textsc{Верзунов}\\[3cm] % Your name
+
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics{./logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+\vfill % Fill the rest of the page with whitespace
+\end{titlepage}
+""")
+listing.write(r"""
+\tableofcontents
+\clearpage""")
+listing.write(r"""
+\section{Исходный код исполнимых файлов на языке Python}
+""")
 for f in files:
     fileName, fileExtension = os.path.splitext(f)
     if fileExtension == '.py':
-        listing.write(
-            r"\lstinputlisting[language=Python, breaklines=true,")
-        listing.write(r"title=\lstname]{"+f+"}")
-    else:
-        listing.write(
-            r"\lstinputlisting[language=Python, breaklines=true,")
-        listing.write(r"title=\lstname]{"+f+"}")
+        listing.write(r"""
+    \subsection{\protect\url{"""+f+"""}}
+""")
+        #listing.write(r"""\addcontentsline{toc}{chapter}{"""+"Test"+"}\n")
+        listing.write(r"\lstinputlisting[language=Python, breaklines=true]")
+        listing.write(r"{"+f+"}")
+        listing.write("\n")
 
 listing.write(r"""
-
+\section{Исходный код графического интерфейса пользователя на языке XML}
+""")
+for f in files:
+    fileName, fileExtension = os.path.splitext(f)
+    if fileExtension == '.ui':
+        listing.write(r"""
+    \subsection{\protect\url{"""+f+"""}}
+""")
+        listing.write(
+            r"\lstinputlisting[language=XML, breaklines=true]")
+        listing.write(r"{"+f+"}")
+        listing.write("\n")
+listing.write(r"""
 \end{document}""")
 listing.close()
 call(["pdflatex", "listing.tex"])
