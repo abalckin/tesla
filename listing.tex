@@ -7,7 +7,7 @@
 \usepackage{url}
 \usepackage[left=2cm, top=2cm, right=0.5cm, bottom=20mm,nohead, nofoot]{geometry}
 
-\renewcommand*\contentsname{Оглавление}
+\renewcommand\contentsname{Оглавление}
 \begin{document}
 
 \begin{titlepage}
@@ -54,7 +54,7 @@
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 
-{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+{\large \the\year \textsc{ год}}\\[3cm] % Date, change the \today to a set date if you want to be precise
 \vfill % Fill the rest of the page with whitespace
 \end{titlepage}
 
@@ -65,35 +65,23 @@
     \subsection{\protect\url{./main.py}}
 \lstinputlisting[language=Python, breaklines=true]{./main.py}
 
-    \subsection{\protect\url{./processing/__init__.py}}
-\lstinputlisting[language=Python, breaklines=true]{./processing/__init__.py}
-
-    \subsection{\protect\url{./processing/wavelet.py}}
-\lstinputlisting[language=Python, breaklines=true]{./processing/wavelet.py}
-
-    \subsection{\protect\url{./interfaces/__init__.py}}
-\lstinputlisting[language=Python, breaklines=true]{./interfaces/__init__.py}
-
-    \subsection{\protect\url{./interfaces/spidr.py}}
-\lstinputlisting[language=Python, breaklines=true]{./interfaces/spidr.py}
+    \subsection{\protect\url{./wavelets/cwt.py}}
+\lstinputlisting[language=Python, breaklines=true]{./wavelets/cwt.py}
 
     \subsection{\protect\url{./wavelets/__init__.py}}
 \lstinputlisting[language=Python, breaklines=true]{./wavelets/__init__.py}
 
-    \subsection{\protect\url{./wavelets/cwt.py}}
-\lstinputlisting[language=Python, breaklines=true]{./wavelets/cwt.py}
-
     \subsection{\protect\url{./forms/mplqt4.py}}
 \lstinputlisting[language=Python, breaklines=true]{./forms/mplqt4.py}
-
-    \subsection{\protect\url{./forms/dataheaderform.py}}
-\lstinputlisting[language=Python, breaklines=true]{./forms/dataheaderform.py}
 
     \subsection{\protect\url{./forms/truescrollbar.py}}
 \lstinputlisting[language=Python, breaklines=true]{./forms/truescrollbar.py}
 
-    \subsection{\protect\url{./forms/mainform.py}}
-\lstinputlisting[language=Python, breaklines=true]{./forms/mainform.py}
+    \subsection{\protect\url{./forms/dataheaderform.py}}
+\lstinputlisting[language=Python, breaklines=true]{./forms/dataheaderform.py}
+
+    \subsection{\protect\url{./forms/progressgroup.py}}
+\lstinputlisting[language=Python, breaklines=true]{./forms/progressgroup.py}
 
     \subsection{\protect\url{./forms/__init__.py}}
 \lstinputlisting[language=Python, breaklines=true]{./forms/__init__.py}
@@ -101,33 +89,45 @@
     \subsection{\protect\url{./forms/downloadform.py}}
 \lstinputlisting[language=Python, breaklines=true]{./forms/downloadform.py}
 
-    \subsection{\protect\url{./forms/aboutform.py}}
-\lstinputlisting[language=Python, breaklines=true]{./forms/aboutform.py}
-
     \subsection{\protect\url{./forms/plotdialog.py}}
 \lstinputlisting[language=Python, breaklines=true]{./forms/plotdialog.py}
 
-    \subsection{\protect\url{./forms/progressgroup.py}}
-\lstinputlisting[language=Python, breaklines=true]{./forms/progressgroup.py}
+    \subsection{\protect\url{./forms/mainform.py}}
+\lstinputlisting[language=Python, breaklines=true]{./forms/mainform.py}
+
+    \subsection{\protect\url{./forms/aboutform.py}}
+\lstinputlisting[language=Python, breaklines=true]{./forms/aboutform.py}
+
+    \subsection{\protect\url{./interfaces/__init__.py}}
+\lstinputlisting[language=Python, breaklines=true]{./interfaces/__init__.py}
+
+    \subsection{\protect\url{./interfaces/spidr.py}}
+\lstinputlisting[language=Python, breaklines=true]{./interfaces/spidr.py}
+
+    \subsection{\protect\url{./processing/__init__.py}}
+\lstinputlisting[language=Python, breaklines=true]{./processing/__init__.py}
+
+    \subsection{\protect\url{./processing/wavelet.py}}
+\lstinputlisting[language=Python, breaklines=true]{./processing/wavelet.py}
 
 \section{Исходный код графического интерфейса пользователя на языке XML}
-
-    \subsection{\protect\url{./forms/plotdialog.ui}}
-\lstinputlisting[language=XML, breaklines=true]{./forms/plotdialog.ui}
-
-    \subsection{\protect\url{./forms/downloadform.ui}}
-\lstinputlisting[language=XML, breaklines=true]{./forms/downloadform.ui}
-
-    \subsection{\protect\url{./forms/mainform.ui}}
-\lstinputlisting[language=XML, breaklines=true]{./forms/mainform.ui}
 
     \subsection{\protect\url{./forms/aboutform.ui}}
 \lstinputlisting[language=XML, breaklines=true]{./forms/aboutform.ui}
 
+    \subsection{\protect\url{./forms/downloadform.ui}}
+\lstinputlisting[language=XML, breaklines=true]{./forms/downloadform.ui}
+
     \subsection{\protect\url{./forms/dataheaderform.ui}}
 \lstinputlisting[language=XML, breaklines=true]{./forms/dataheaderform.ui}
 
+    \subsection{\protect\url{./forms/mainform.ui}}
+\lstinputlisting[language=XML, breaklines=true]{./forms/mainform.ui}
+
     \subsection{\protect\url{./forms/progressgroup.ui}}
 \lstinputlisting[language=XML, breaklines=true]{./forms/progressgroup.ui}
+
+    \subsection{\protect\url{./forms/plotdialog.ui}}
+\lstinputlisting[language=XML, breaklines=true]{./forms/plotdialog.ui}
 
 \end{document}

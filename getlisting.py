@@ -9,14 +9,7 @@ Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
 import os
 from subprocess import call
 def get_filepaths(directory):
-    """
-    This function will generate the file names in a directory 
-    tree by walking the tree either top-down or bottom-up. For each 
-    directory in the tree rooted at directory top (including top itself), 
-    it yields a 3-tuple (dirpath, dirnames, filenames).
-    """
     file_paths = []  # List which will store all of the full filepaths.
-
     # Walk the tree.
     for root, directories, files in os.walk(directory):
         files = [f for f in files if not f[0] == '.' and not f == 'getlisting.py']
@@ -46,7 +39,7 @@ listing.write(r"""\usepackage[left=2cm, top=2cm, right=0.5cm, bottom=20mm,""")
 listing.write(r"""nohead, nofoot]{geometry}
 """)
 listing.write(r"""
-\renewcommand*\contentsname{Оглавление}
+\renewcommand\contentsname{Оглавление}
 \begin{document}
 """)
 listing.write(r"""
@@ -94,7 +87,7 @@ listing.write(r"""
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 
-{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+{\large \the\year \textsc{ год}}\\[3cm] % Date, change the \today to a set date if you want to be precise
 \vfill % Fill the rest of the page with whitespace
 \end{titlepage}
 """)
@@ -110,7 +103,6 @@ for f in files:
         listing.write(r"""
     \subsection{\protect\url{"""+f+"""}}
 """)
-        #listing.write(r"""\addcontentsline{toc}{chapter}{"""+"Test"+"}\n")
         listing.write(r"\lstinputlisting[language=Python, breaklines=true]")
         listing.write(r"{"+f+"}")
         listing.write("\n")
