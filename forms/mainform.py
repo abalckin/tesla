@@ -61,6 +61,7 @@ class MainForm(QtGui.QMainWindow):
         self.actionDetrend.triggered.connect(self.detrendData)
         self.waveletComboBox.currentIndexChanged.connect(self.waveletChanged)
         self.lock = True
+        self.detrend = False
         for name, obj in inspect.getmembers(cwt):
             if inspect.isclass(obj):
                 if obj.__base__.__name__ == 'Cwt':
@@ -294,7 +295,12 @@ class MainForm(QtGui.QMainWindow):
         self.downloadForm.show()
 
     def detrendData(self):
-        self.wa.detrend()
+        if not self.detrend:
+            self.wa.detrend(True)
+            self.detrend = True
+        else:
+            self.wa.detrend(False)
+            self.detrend = False
         self.replot()
 
     def waveletChanged(self, value):

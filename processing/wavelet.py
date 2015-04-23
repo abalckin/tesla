@@ -25,6 +25,7 @@ class WaveletTransform(QtCore.QThread):
         self._order = order
         self._omega0 = omega0
         self._data = data
+ 
 
     def run(self):
         cw = self._wavelet(self._data, self.transformed, self.notifyProgress,
@@ -45,10 +46,15 @@ class WaweletAnalysis(QtCore.QObject):
         self._time = time
         self._values = values
         self._maxLength = 1 << ((self._values.shape[-1]-1).bit_length()-1)
-
+        self._detrend = False
+        
     def plotSignal(self, axes, offset, size, xlabel='', ylabel='', style='-'):
+        if self._detrend:
+            self._v = plb.detrend(self._values[offset:offset+size], key='linear')
+        else:
+            self._v = self._values[offset:offset+size]
         axes.plot_date(self._time[offset:offset+size],
-                       self._values[offset:offset+size], style)
+                       self._v, style)
 
     def _plotScalogram(self, cw):
         self._cw = cw
@@ -75,7 +81,12 @@ class WaweletAnalysis(QtCore.QObject):
                       notes=4, largestscale=4):
         print(size)
         print(largestscale)
-        self._y = self._values[offset:offset+size]
+        if self._detrend:
+            self._v = plb.detrend(self._values[offset:offset+size], key='linear')
+        else:
+            self._v = self._values[offset:offset+size]
+        
+        self._y = self._v
         self._x = self._time[offset:offset+size]
         self._min_h = min_h
         self._max_h = max_h
@@ -160,8 +171,8 @@ class WaweletAnalysis(QtCore.QObject):
     def getDate(self, index):
         return self._time[index]
 
-    def detrend(self):
-        self._values = plb.detrend(self._values, key='linear')
+    def detrend(self, val):
+        self._detrend = val
 
     def getSceleton(self, im):
         imp1 = np.pad(im, ((1, 1), (0, 0)), 'minimum')
