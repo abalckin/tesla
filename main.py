@@ -8,9 +8,10 @@ Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
 """
 import sys
 from PyQt4 import QtGui  # connect PyQt
-from forms.mainform import MainForm 
+from forms.mainform import MainForm
 import os
-from PyQt4.QtCore import pyqtRemoveInputHook 
+from PyQt4.QtCore import pyqtRemoveInputHook
+
 
 def main():
     pyqtRemoveInputHook()

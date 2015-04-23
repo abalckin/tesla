@@ -5,10 +5,9 @@ NAS of the Kyrgyz Republic
 All rights reserved.
 Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
 """
-from PyQt4 import QtCore, QtGui,uic
+from PyQt4 import QtGui, uic
 from forms.mplqt4 import MyMplCanvas
 import pylab
-import datetime
 
 
 class PlotDialog(QtGui.QDialog):
@@ -16,7 +15,7 @@ class PlotDialog(QtGui.QDialog):
         QtGui.QWidget.__init__(self, parent)
         uic.loadUi("forms/plotdialog.ui", self)
         self.canvas = MyMplCanvas(self, width=13, height=2, dpi=100)
-        self.canvasGridLayout.addWidget(self.canvas, 0,0,1,4)
+        self.canvasGridLayout.addWidget(self.canvas, 0, 0, 1, 4)
         self.coordLabel.setText('')
         self.canvas.mouseMotion.connect(self.canvasMotion)
         self.canvas.canvasLeave.connect(lambda: self.coordLabel.setText(''))

@@ -5,12 +5,13 @@ NAS of the Kyrgyz Republic
 All rights reserved.
 Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
 """
-from PyQt4 import QtCore, QtGui, uic
+from PyQt4 import QtGui, uic
 import numpy as np
 import datetime as dt
 import os
 from interfaces.spidr import CSVDownload
 from forms.progressgroup import ProgressGroup
+
 
 class DownloadForm(QtGui.QDialog):
     def __init__(self, parent=None):
@@ -49,7 +50,6 @@ class DownloadForm(QtGui.QDialog):
         self.obsComboBox.setCurrentIndex(0)
 
     def changeObs(self, value):
-        # import pdb; pdb.set_trace()
         interval = self.observatoryes['Interval'][value].astype(str)
         date1 = dt.datetime.strptime(interval[0:10], '%Y-%m-%d')
         date2 = dt.datetime.strptime(interval[-10:-1], '%Y-%m-%d')
@@ -58,7 +58,8 @@ class DownloadForm(QtGui.QDialog):
 
     def changeFile(self, _):
         fileName = ''.join((
-            self.observatoryes['Code'][self.obsComboBox.currentIndex()].astype(str),
+            self.observatoryes['Code'][self.obsComboBox.currentIndex()
+                                       ].astype(str),
             self.fromDateEdit.date().toString(),
             self.toDateEdit.date().toString(),
             self.seriesComboBox.currentText(),
@@ -71,7 +72,7 @@ class DownloadForm(QtGui.QDialog):
             fileName
             ))
         self.setFileName(self.defaultFileName)
-         
+
     def selectFile(self):
         filename = QtGui.QFileDialog.getSaveFileName(self,
                                                      'Save file',
@@ -95,7 +96,8 @@ class DownloadForm(QtGui.QDialog):
             self.toDateEdit.date())
 
     def accept(self):
-        code = self.observatoryes['Code'][self.obsComboBox.currentIndex()].astype(str)
+        code = self.observatoryes['Code'][self.obsComboBox.currentIndex()
+                                          ].astype(str)
         fromDate = self.fromDateEdit.date().toPyDate()
         toDate = self.toDateEdit.date().toPyDate()
         url = """http://spidr.ngdc.noaa.gov/spidr/servlet/GetData2?\
@@ -130,24 +132,3 @@ class DownloadForm(QtGui.QDialog):
         if self.label is not None:
             self.label.deleteLater()
         self.progress.deleteLater()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

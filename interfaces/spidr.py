@@ -5,7 +5,8 @@ NAS of the Kyrgyz Republic
 All rights reserved.
 Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
 """
-#http://spidr.ngdc.noaa.gov/spidr/servlet/GetData2?format=xml&datefrom=1980-01-01T00:00:00UTC&dateto=2001-01-01T00:00:00UTC&dataset=geom_f@Geom.hr&location=BOU
+# http://spidr.ngdc.noaa.gov/spidr/servlet/GetData2?format=xml&datefrom=1980-01-
+# 01T00:00:00UTC&dateto=2001-01-01T00:00:00UTC&dataset=geom_f@Geom.hr&location=BOU
 import csv
 from PyQt4 import QtCore
 import numpy as np
@@ -14,7 +15,8 @@ import os
 import urllib.request
 import matplotlib.dates as dates
 from scipy.signal import cspline1d, cspline1d_eval
-import pdb
+
+
 class CSVDownload(QtCore.QThread):
     notifyProgress = QtCore.pyqtSignal(int)
     loaded = QtCore.pyqtSignal()
@@ -35,10 +37,11 @@ class CSVDownload(QtCore.QThread):
 class CSVImpot(QtCore.QThread):
     notifyProgress = QtCore.pyqtSignal(int)
     loaded = QtCore.pyqtSignal()
+
     def __init__(self, fileName):
         QtCore.QThread.__init__(self)
         self.fileName = fileName
-        self.header=[]
+        self.header = []
         self.interpolate = True
 
     def run(self):
@@ -71,36 +74,27 @@ class CSVImpot(QtCore.QThread):
                                     ''.join((row[0], row[1], row[2],
                                             row[4])),
                                     '%Y%m%d%H%M')),
-                            value.append(float(row[-1])-float(row[-14]))  #4h
+                            value.append(float(row[-1])-float(row[-14]))  # 4h
                             # value.append(float(row[-1])-float(row[19]))  # 1h
             self.notifyProgress.emit(20)
         signal_src = np.array((date, value), dtype=np.dtype('a25'))
         signal = signal_src[:, np.logical_not(
             np.isnan(signal_src[1, :].astype(np.float)))]
-        # self.value=np.nan_to_num(self.value)
         self.notifyProgress.emit(60)
         if self.interpolate:
-            self.time = signal_src[0,:].astype(np.datetime64).astype(dt.datetime)
+            self.time = signal_src[0, :].astype(np.datetime64).astype(
+                dt.datetime)
             dx = dates.date2num(self.time[1])-dates.date2num(self.time[0])
             cj = cspline1d(signal[1, :].astype(float))
             self.value = cspline1d_eval(cj, dates.date2num(self.time),
                                         dx=dx,
                                         x0=dates.date2num(self.time[0]))
-            #pdb.set_trace()
         else:
-            self.time = dates.signal[0, :].astype(np.datetime64).astype(dt.datetime)
+            self.time = dates.signal[0, :].astype(np.datetime64).astype(
+                dt.datetime)
             self.value = signal[1, :].astype(np.float)
         self.notifyProgress.emit(80)
         self.loaded.emit()
 
     def __del__(self):
         self.wait()
-
-
-
-
-
-
-
-
-

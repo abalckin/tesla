@@ -5,7 +5,8 @@ NAS of the Kyrgyz Republic
 All rights reserved.
 Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
 """
-from PyQt4 import QtCore, QtGui, uic
+from PyQt4 import QtGui, uic
+
 
 class DataHeaderForm(QtGui.QDialog):
     def __init__(self, header):

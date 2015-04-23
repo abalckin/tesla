@@ -12,7 +12,7 @@ import numpy
 import scipy
 from PyQt4.pyqtconfig import Configuration
 
-# Main form
+
 class AboutForm(QtGui.QDialog):
     def __init__(self, parent=None):
         QtGui.QDialog.__init__(self, parent)

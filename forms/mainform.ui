@@ -159,6 +159,12 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="pageStep">
+             <number>100</number>
+            </property>
             <property name="tracking">
              <bool>false</bool>
             </property>
@@ -477,7 +483,7 @@
      <x>0</x>
      <y>0</y>
      <width>620</width>
-     <height>21</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

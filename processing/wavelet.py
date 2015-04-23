@@ -7,11 +7,7 @@ Code released under the GNU GENERAL PUBLIC LICENSE Version 3, June 2007
 """
 import numpy as np
 import pylab as plb
-import datetime as dt
 import wavelets.cwt as wave
-import time as profiler
-from scipy.ndimage.filters import maximum_filter, minimum_filter
-from scipy.ndimage.morphology import generate_binary_structure, binary_erosion
 from PyQt4 import QtCore
 
 
@@ -33,68 +29,63 @@ class WaveletTransform(QtCore.QThread):
     def run(self):
         cw = self._wavelet(self._data, self.transformed, self.notifyProgress,
                            scaling=self._scaling, notes=self._notes,
-                           omega0=self._omega0, largestscale=self._largestscale,
+                           omega0=self._omega0,
+                           largestscale=self._largestscale,
                            order=self._order)
         return cw
 
-    
+
 class WaweletAnalysis(QtCore.QObject):
     notifyProgress = QtCore.pyqtSignal(int)
     plotted = QtCore.pyqtSignal()
     cancelled = QtCore.pyqtSignal()
-    def __init__(self,time,values):
+
+    def __init__(self, time, values):
         QtCore.QObject.__init__(self)
-        self._time=time
-        self._values=values
-        self._maxLength=1<<((self._values.shape[-1]-1).bit_length()-1)
-        
-    def plotSignal(self,axes,offset,size,xlabel='',ylabel='',style='-'):
+        self._time = time
+        self._values = values
+        self._maxLength = 1 << ((self._values.shape[-1]-1).bit_length()-1)
+
+    def plotSignal(self, axes, offset, size, xlabel='', ylabel='', style='-'):
         axes.plot_date(self._time[offset:offset+size],
-            self._values[offset:offset+size],style)
-        #yearsFmt = plb.DateFormatter(dataFormatter)
-        #axes.xaxis.set_major_formatter(yearsFmt)
-        #axes.set_xlabel(xlabel)
-        #axes.set_ylabel(ylabel)
+                       self._values[offset:offset+size], style)
+
     def _plotScalogram(self, cw):
-        self._cw=cw
-        #start=profiler.time()
-        scales=cw.getscales()     
-        cwt=cw.getdata()
-        pwr=cw.getpower()
-       # pwr=cw.getangle()*1e20
-        #scalespec=np.sum(pwr,axis=1)/scales # calculate scale spectrum
-        #scalespec=np.sum(np.anglpwr,axis=1)/scales # calculate scale spectrum
-        # scales
-        y=cw.fourierwl*scales
-        #x=np.arange(Nlo*1.0,Nhi*1.0,1.0)
-        #mpl.xlabel('Date')
-        #mpl.ylabel('Period, %s' % p_label)
+        self._cw = cw
+        scales = cw.getscales()
+        pwr = cw.getpower()
+        y = cw.fourierwl*scales
         plotcwt = np.clip(pwr, self._min_h, self._max_h)
-        self._axes.imshow(plotcwt,cmap=plb.cm.hot_r,
-                          extent=[plb.date2num(self._x[0]),plb.date2num(self._x[-1]),
-                            y[-1],y[0]],aspect='auto', interpolation=None)
+        self._axes.imshow(plotcwt,
+                          cmap=plb.cm.hot_r,
+                          extent=[plb.date2num(self._x[0]),
+                                  plb.date2num(self._x[-1]),
+                                  y[-1], y[0]], aspect='auto',
+                                  interpolation=None)
         self._axes.xaxis_date()
-        #yearsFmt = mpl.DateFormatter('%m.%y')
-        #axes.xaxis.set_major_formatter(yearsFmt)
-        #mpl.gcf().autofmt_xdate()
-        if self._scaling=="log": self._axes.set_yscale('log')
-        self._axes.set_ylim(y[0],y[-1])
-        #print('Plot - %.03f s' % (profiler.time()-start))
+        if self._scaling == "log":
+            self._axes.set_yscale('log')
+        self._axes.set_ylim(y[0], y[-1])
         self.plotted.emit()
 
-    def plotScalogram(self, axes,size,offset, max_h=1000., min_h=0.,p_label='', s_label='',wavelet=wave.Morlet, scaling='log',
-        order=2, omega0=5.,notes=4, largestscale=4):
+    def plotScalogram(self, axes, size, offset, max_h=1000., min_h=0.,
+                      p_label='', s_label='',
+                      wavelet=wave.Morlet, scaling='log',
+                      order=2, omega0=5.,
+                      notes=4, largestscale=4):
         print(size)
         print(largestscale)
-        self._y=self._values[offset:offset+size]
-        self._x=self._time[offset:offset+size]
-        self._min_h=min_h
-        self._max_h=max_h
-        self._axes=axes
-        self._scaling=scaling
-        self._wt=WaveletTransform(self._y,wavelet=wavelet, scaling=scaling,
-                    notes=notes, largestscale=size//largestscale, order=order,
-            omega0=omega0)
+        self._y = self._values[offset:offset+size]
+        self._x = self._time[offset:offset+size]
+        self._min_h = min_h
+        self._max_h = max_h
+        self._axes = axes
+        self._scaling = scaling
+        self._wt = WaveletTransform(self._y, wavelet=wavelet, scaling=scaling,
+                                    notes=notes,
+                                    largestscale=size//largestscale,
+                                    order=order,
+                                    omega0=omega0)
         self._wt.transformed.connect(self._plotScalogram)
         self._wt.notifyProgress.connect(self._notifyProgress)
         self._wt.terminated.connect(lambda: self.cancelled.emit())
@@ -105,20 +96,15 @@ class WaweletAnalysis(QtCore.QObject):
         # projected fourier spectrum
         axes.set_xlabel(xlabel)
         axes.set_ylabel(ylabel)
-        # vara = 1.0
         f = np.fft.fftfreq(self._x.shape[-1])
         fspec = np.abs(np.fft.fft(self._y))
         u = np.abs(fspec)[0:-self._x.shape[-1]/2]
         v = 1/f[0:-self._x.shape[-1]/2]
-        # w=np.ones(win_len,'d')
-        # s=np.convolve(w/w.sum(),u,mode='valid')
-        # sv=v[win_len/2:-win_len/2+1]
-        # print(len(s),len(sv))
         if scaling == 'log':
             axes.loglog(u, v, 'b-')  # ,s,sv,'g-')
         else:
             axes.semilogx(u, v, 'b-')  # ,s,sv,'g-')
-            axes.set_xlim(1e-1,np.max(fspec))
+            axes.set_xlim(1e-1, np.max(fspec))
             axes.set_ylim(self._y[0], self._y[-1])
 
     def plotScalegram(self, axes, xlabel='Power',
@@ -138,35 +124,36 @@ class WaweletAnalysis(QtCore.QObject):
         axes.set_ylim(y[0], y[-1])
 
     def plotSceleton(self, axes, xlabel='Power',
-                      ylabel='Period', scaling='log', min_h=0., max_h=1000.):
+                     ylabel='Period', scaling='log', min_h=0., max_h=1000.):
         cw = self._cw
 
         scales = cw.getscales()
         pwr = self.getSceleton(cw.getpower())
         y = cw.fourierwl*scales
-        #plotcwt1 = np.clip(pwr[0], self._min_h, self._max_h)
-        #plotcwt2 = np.clip(pwr[1], self._min_h, self._max_h)
         axes.imshow(pwr[0], cmap=plb.cm.hot_r,
-                          extent=[plb.date2num(self._x[0]),plb.date2num(self._x[-1]),
+                    extent=[plb.date2num(self._x[0]),
+                            plb.date2num(self._x[-1]),
                             y[-1], y[0]], aspect='auto', interpolation=None)
         axes.xaxis_date()
         axes.imshow(pwr[1], cmap=plb.cm.hot_r,
-                          extent=[plb.date2num(self._x[0]),plb.date2num(self._x[-1]),
-                            y[-1], y[0]], aspect='auto', interpolation=None)
+                    extent=[plb.date2num(self._x[0]),
+                    plb.date2num(self._x[-1]),
+                    y[-1], y[0]], aspect='auto',
+                    interpolation=None)
         axes.xaxis_date()
         if scaling == "log":
             axes.set_yscale('log')
         axes.set_ylim(y[0], y[-1])
-        
+
     def cancelScalogram(self):
         self._wt.terminate()
-        
-    def _notifyProgress(self,value):
+
+    def _notifyProgress(self, value):
         self.notifyProgress.emit(value)
-    
+
     def getMaxLengthAsPower2(self):
         return (self._values.shape[-1]-1).bit_length()-1
-    
+
     def getLength(self):
         return self._values.shape[-1]
 
@@ -182,4 +169,3 @@ class WaweletAnalysis(QtCore.QObject):
         row = (np.diff(np.sign(np.diff(imp0, axis=1)), axis=1) < 0)
         col = (np.diff(np.sign(np.diff(imp1, axis=0)), axis=0) < 0)
         return (row*im, col*im)
-    

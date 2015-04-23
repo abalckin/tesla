@@ -73,29 +73,30 @@ listing.write(r"""
 
 % If you don't want a supervisor, uncomment the two lines below and remove the section above
 \Large \emph{Автор:}\\
-м.н.с. С.Н. \textsc{Верзунов}\\[3cm] % Your name
+м.н.с. \textsc{Верзунов С.Н.}\\[3cm] % Your name
 
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
 %----------------------------------------------------------------------------------------
 
-\includegraphics{./logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+\includegraphics{./logo.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
  
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
-
-{\large \the\year \textsc{ год}}\\[3cm] % Date, change the \today to a set date if you want to be precise
+\vspace{10mm}
+\textsc{Бишкек }{\large \the\year}\\[3cm] % Date, change the \today to a set date if you want to be precise
 \vfill % Fill the rest of the page with whitespace
 \end{titlepage}
 """)
 listing.write(r"""
+\setcounter{page}{2}
 \tableofcontents
 \clearpage""")
 listing.write(r"""
-\section{Исходный код исполнимых файлов на языке Python}
+\section{Исходный код исполнимых файлов}
 """)
 for f in files:
     fileName, fileExtension = os.path.splitext(f)
@@ -108,7 +109,7 @@ for f in files:
         listing.write("\n")
 
 listing.write(r"""
-\section{Исходный код графического интерфейса пользователя на языке XML}
+\section{Исходный код графического интерфейса пользователя}
 """)
 for f in files:
     fileName, fileExtension = os.path.splitext(f)
